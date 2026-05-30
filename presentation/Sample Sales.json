@@ -7,12 +7,11 @@
     }, {
       "name" : "presentationTable:Sample Sales.Products"
     }, {
-      "name" : "presentationTable:Sample Sales.Customers",
-      "children" : [ {
-        "name" : "presentationTable:Sample Sales.Addresses"
-      } ]
+      "name" : "presentationTable:Sample Sales.Customers"
     }, {
       "name" : "presentationTable:Sample Sales.Base Fact"
+    }, {
+      "name" : "presentationTable:Sample Sales.Customer Regions"
     } ]
   }
 }

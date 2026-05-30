@@ -130,7 +130,7 @@
       }
     } ],
     "logicalTableSources" : [ {
-      "name" : "D3 PRODUCTS",
+      "name" : "LTS1 Products",
       "disable" : false,
       "tableMapping" : {
         "tables" : [ "physicalTable:SampleSalesDB.BIUSER.D3 PRODUCTS" ]

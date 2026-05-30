@@ -690,7 +690,7 @@
       }
     } ],
     "logicalTableSources" : [ {
-      "name" : "D4 TIME",
+      "name" : "LTS1 Time",
       "disable" : false,
       "tableMapping" : {
         "tables" : [ "physicalTable:SampleSalesDB.BIUSER.D4 TIME" ]

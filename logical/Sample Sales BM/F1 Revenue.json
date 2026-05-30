@@ -38,7 +38,7 @@
       }
     } ],
     "logicalTableSources" : [ {
-      "name" : "F1 REVENUE",
+      "name" : "LTS1 Revenue",
       "disable" : false,
       "tableMapping" : {
         "tables" : [ "physicalTable:SampleSalesDB.BIUSER.F1 REVENUE" ]
