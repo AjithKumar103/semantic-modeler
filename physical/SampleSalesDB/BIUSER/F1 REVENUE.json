@@ -1,0 +1,35 @@
+{
+  "physicalTable" : {
+    "name" : "F1 REVENUE",
+    "sourceTable" : "physicalTable:SampleSalesDB.BIUSER.SAMP_REVENUE_F",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:SampleSalesDB.BIUSER.D2 CUSTOMERS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleSalesDB.BIUSER.F1 REVENUE.CUST_KEY",
+        "rightColumn" : "physicalColumn:SampleSalesDB.BIUSER.D2 CUSTOMERS.CUST_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:SampleSalesDB.BIUSER.D3 PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleSalesDB.BIUSER.F1 REVENUE.PROD_KEY",
+        "rightColumn" : "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.PROD_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:SampleSalesDB.BIUSER.D4 TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleSalesDB.BIUSER.F1 REVENUE.BILL_DAY_DT",
+        "rightColumn" : "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CALENDAR_DATE"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

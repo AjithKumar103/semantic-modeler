@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "D2 CUSTOMERS",
+    "sourceTable" : "physicalTable:SampleSalesDB.BIUSER.SAMP_CUSTOMERS_D",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:SampleSalesDB.BIUSER.D1 ADDRESSES",
+      "useJoinExpression" : true,
+      "joinExpression" : {
+        "expressionTemplate" : "%1 = %2",
+        "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D2 CUSTOMERS.ADDRESS_KEY", "physicalColumn:SampleSalesDB.BIUSER.D1 ADDRESSES.ADDRESS_KEY" ]
+      },
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

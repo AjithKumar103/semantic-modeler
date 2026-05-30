@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "D4 TIME",
+    "sourceTable" : "physicalTable:SampleSalesDB.BIUSER.SAMP_TIME_DAY_D",
+    "overrideSourceCacheSetting" : false
+  }
+}

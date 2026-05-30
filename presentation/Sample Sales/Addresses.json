@@ -1,0 +1,15 @@
+{
+  "presentationTable" : {
+    "name" : "Addresses",
+    "presentationColumns" : [ {
+      "name" : "Address Key",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D1 Addresses.Address Key"
+    }, {
+      "name" : "Postal Code",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D1 Addresses.Postal Code"
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D1 Addresses.City"
+    } ]
+  }
+}
