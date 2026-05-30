@@ -14,6 +14,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.F1 REVENUE.UNITS" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Revenue",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.F1 REVENUE.UNITS" ]
+          }
         } ]
       },
       "aggregation" : {
@@ -27,6 +33,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "F1 REVENUE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.F1 REVENUE.REVENUE" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Revenue",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.F1 REVENUE.REVENUE" ]

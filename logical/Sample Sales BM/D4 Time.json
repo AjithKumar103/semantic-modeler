@@ -14,6 +14,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CALENDAR_DATE" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CALENDAR_DATE" ]
+          }
         } ]
       }
     }, {
@@ -24,6 +30,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAY_KEY" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAY_KEY" ]
@@ -42,6 +54,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_HALF" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_HALF" ]
+          }
         } ]
       }
     }, {
@@ -52,6 +70,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_MONTH" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_MONTH" ]
@@ -70,6 +94,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_QTR" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_QTR" ]
+          }
         } ]
       }
     }, {
@@ -80,6 +110,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_WEEK" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_WEEK" ]
@@ -98,6 +134,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_YEAR" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_YEAR" ]
+          }
         } ]
       }
     }, {
@@ -108,6 +150,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAY_OF_MONTH" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAY_OF_MONTH" ]
@@ -126,6 +174,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAY_OF_WEEK" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAY_OF_WEEK" ]
+          }
         } ]
       }
     }, {
@@ -136,6 +190,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAY_OF_YEAR" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAY_OF_YEAR" ]
@@ -154,6 +214,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_HALF" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_HALF" ]
+          }
         } ]
       }
     }, {
@@ -164,6 +230,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_MONTH" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_MONTH" ]
@@ -182,6 +254,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_QTR" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_QTR" ]
+          }
         } ]
       }
     }, {
@@ -192,6 +270,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_WEEK" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_WEEK" ]
@@ -210,6 +294,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_YEAR" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_YEAR" ]
+          }
         } ]
       }
     }, {
@@ -220,6 +310,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.JULIAN_DAY_NUM" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.JULIAN_DAY_NUM" ]
@@ -238,6 +334,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.JULIAN_MONTH_NUM" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.JULIAN_MONTH_NUM" ]
+          }
         } ]
       }
     }, {
@@ -248,6 +350,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.JULIAN_QTR_NUM" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.JULIAN_QTR_NUM" ]
@@ -266,6 +374,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.JULIAN_WEEK_NUM" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.JULIAN_WEEK_NUM" ]
+          }
         } ]
       }
     }, {
@@ -276,6 +390,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.PER_NAME_HALF" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.PER_NAME_HALF" ]
@@ -294,6 +414,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.PER_NAME_MONTH" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.PER_NAME_MONTH" ]
+          }
         } ]
       }
     }, {
@@ -304,6 +430,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.PER_NAME_QTR" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.PER_NAME_QTR" ]
@@ -322,6 +454,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.PER_NAME_WEEK" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.PER_NAME_WEEK" ]
+          }
         } ]
       }
     }, {
@@ -332,6 +470,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.PER_NAME_YEAR" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.PER_NAME_YEAR" ]
@@ -350,6 +494,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_QTR" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_QTR" ]
+          }
         } ]
       }
     }, {
@@ -360,6 +510,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_MTH" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_MTH" ]
@@ -378,6 +534,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.BEG_OF_QTR_WID" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.BEG_OF_QTR_WID" ]
+          }
         } ]
       }
     }, {
@@ -388,6 +550,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.BEG_OF_MTH_WID" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.BEG_OF_MTH_WID" ]
@@ -406,6 +574,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.BEG_OF_WEEK_WID" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.BEG_OF_WEEK_WID" ]
+          }
         } ]
       }
     }, {
@@ -416,6 +590,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.HOLIDAY" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.HOLIDAY" ]
@@ -434,6 +614,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.LOADED" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.LOADED" ]
+          }
         } ]
       }
     }, {
@@ -444,6 +630,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_MONTH_END_DATE" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_MONTH_END_DATE" ]
@@ -462,6 +654,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_QTR_END_DATE" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_QTR_END_DATE" ]
+          }
         } ]
       }
     }, {
@@ -472,6 +670,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_HALF_YEAR_END_DATE" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_HALF_YEAR_END_DATE" ]
@@ -490,6 +694,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_YEAR_END_DATE" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_YEAR_END_DATE" ]
+          }
         } ]
       }
     }, {
@@ -500,6 +710,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_MONTH_END_DATE" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_MONTH_END_DATE" ]
@@ -518,6 +734,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_QTR_END_DATE" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_QTR_END_DATE" ]
+          }
         } ]
       }
     }, {
@@ -528,6 +750,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_YEAR_END_DATE" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_YEAR_END_DATE" ]
@@ -546,6 +774,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_WEEK_END_DATE" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.CAL_WEEK_END_DATE" ]
+          }
         } ]
       }
     }, {
@@ -556,6 +790,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_WEEK_END_DATE" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.FSCL_WEEK_END_DATE" ]
@@ -574,6 +814,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_WEEK" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_WEEK" ]
+          }
         } ]
       }
     }, {
@@ -584,6 +830,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_HALF_YEAR" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_HALF_YEAR" ]
@@ -602,6 +854,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_YEAR" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_YEAR" ]
+          }
         } ]
       }
     }, {
@@ -612,6 +870,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_FSCL_WEEK" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_FSCL_WEEK" ]
@@ -630,6 +894,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_FSCL_MONTH" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_FSCL_MONTH" ]
+          }
         } ]
       }
     }, {
@@ -640,6 +910,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_FSCL_QTR" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_FSCL_QTR" ]
@@ -658,6 +934,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_FSCL_HALF_YEAR" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_FSCL_HALF_YEAR" ]
+          }
         } ]
       }
     }, {
@@ -672,6 +954,12 @@
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_FSCL_YEAR" ]
           }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.DAYS_IN_FSCL_YEAR" ]
+          }
         } ]
       }
     }, {
@@ -682,6 +970,12 @@
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
           "logicalTableSource" : "D4 TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.TOTAL_VALUE" ]
+          }
+        }, {
+          "logicalTableSource" : "LTS1 Time",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D4 TIME.TOTAL_VALUE" ]
