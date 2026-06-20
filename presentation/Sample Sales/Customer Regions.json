@@ -31,6 +31,51 @@
     }, {
       "name" : "Region",
       "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 Customers.Region"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:Sample Sales BM.D2 Customers",
+      "localization" : { },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D2 Customers.Total",
+        "localization" : { }
+      }, {
+        "name" : "Customer Region",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D2 Customers.Customer Region",
+        "displayColumn" : "presentationColumn:Sample Sales.Customer Regions.Region",
+        "localization" : { }
+      }, {
+        "name" : "Customer Area",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D2 Customers.Customer Area",
+        "displayColumn" : "presentationColumn:Sample Sales.Customer Regions.Area",
+        "localization" : { }
+      }, {
+        "name" : "Customer Country",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D2 Customers.Customer Country",
+        "displayColumn" : "presentationColumn:Sample Sales.Customer Regions.Country Name",
+        "localization" : { }
+      }, {
+        "name" : "Customer State Province",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D2 Customers.Customer State Province",
+        "displayColumn" : "presentationColumn:Sample Sales.Customer Regions.State Province",
+        "localization" : { }
+      }, {
+        "name" : "Customer City",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D2 Customers.Customer City",
+        "displayColumn" : "presentationColumn:Sample Sales.Customer Regions.City",
+        "localization" : { }
+      }, {
+        "name" : "Customer Postal Code",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D2 Customers.Customer Postal Code",
+        "displayColumn" : "presentationColumn:Sample Sales.Customer Regions.Postal Code",
+        "localization" : { }
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D2 Customers.Detail",
+        "displayColumn" : "presentationColumn:Sample Sales.Customers.Name",
+        "localization" : { }
+      } ]
     } ]
   }
 }

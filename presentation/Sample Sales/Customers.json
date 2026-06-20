@@ -10,6 +10,15 @@
     }, {
       "name" : "Gender",
       "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 Customers.Gender"
+    }, {
+      "name" : "Birth Date",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 Customers.Birth Dt"
+    }, {
+      "name" : "Marital Status",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 Customers.Marital St"
+    }, {
+      "name" : "First Contact Date",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 Customers.Fst Contact Dt"
     } ]
   }
 }
