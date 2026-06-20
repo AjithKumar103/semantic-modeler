@@ -1,34 +1,24 @@
 {
   "physicalTable" : {
-    "name" : "SAMP_REVENUE_F",
+    "name" : "SAMP_EMPL_PARENT_CHILD_MAP",
     "sourceType" : "TABLE",
     "physicalColumns" : [ {
-      "name" : "UNITS",
+      "name" : "MEMBER_KEY",
       "dataType" : "NUMERIC",
       "length" : 0,
       "nullable" : true
     }, {
-      "name" : "REVENUE",
+      "name" : "ANCESTOR_KEY",
       "dataType" : "NUMERIC",
       "length" : 0,
       "nullable" : true
     }, {
-      "name" : "CUST_KEY",
+      "name" : "DISTANCE",
       "dataType" : "NUMERIC",
       "length" : 0,
       "nullable" : true
     }, {
-      "name" : "PROD_KEY",
-      "dataType" : "NUMERIC",
-      "length" : 0,
-      "nullable" : true
-    }, {
-      "name" : "BILL_DAY_DT",
-      "dataType" : "TIMESTAMP",
-      "length" : 0,
-      "nullable" : true
-    }, {
-      "name" : "EMPL_KEY",
+      "name" : "IS_LEAF",
       "dataType" : "NUMERIC",
       "length" : 0,
       "nullable" : true

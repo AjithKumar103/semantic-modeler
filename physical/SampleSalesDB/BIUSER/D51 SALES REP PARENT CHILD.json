@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "D51 SALES REP PARENT CHILD",
+    "sourceTable" : "physicalTable:SampleSalesDB.BIUSER.SAMP_EMPL_PARENT_CHILD_MAP",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:SampleSalesDB.BIUSER.D50 SALES REP",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleSalesDB.BIUSER.D51 SALES REP PARENT CHILD.ANCESTOR_KEY",
+        "rightColumn" : "physicalColumn:SampleSalesDB.BIUSER.D50 SALES REP.EMPLOYEE_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

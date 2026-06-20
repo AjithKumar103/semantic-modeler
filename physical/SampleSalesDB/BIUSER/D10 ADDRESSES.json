@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "D10 ADDRESSES",
+    "sourceTable" : "physicalTable:SampleSalesDB.BIUSER.SAMP_ADDRESSES_D",
+    "overrideSourceCacheSetting" : false
+  }
+}

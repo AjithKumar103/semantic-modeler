@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "D52 SALES REP POSITION",
+    "sourceTable" : "physicalTable:SampleSalesDB.BIUSER.SAMP_EMPL_POSTN_D",
+    "overrideSourceCacheSetting" : false
+  }
+}

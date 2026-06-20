@@ -1,0 +1,26 @@
+{
+  "physicalTable" : {
+    "name" : "F2 REVENUE AGGREGATE",
+    "sourceTable" : "physicalTable:SampleSalesDB.BIUSER.SAMP_REVENUE_FA2",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:SampleSalesDB.BIUSER.D3 PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleSalesDB.BIUSER.F2 REVENUE AGGREGATE.PROD_KEY",
+        "rightColumn" : "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.PROD_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:SampleSalesDB.BIUSER.D1 TIME QTR GRAIN",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleSalesDB.BIUSER.F2 REVENUE AGGREGATE.BILL_QTR_KEY",
+        "rightColumn" : "physicalColumn:SampleSalesDB.BIUSER.D1 TIME QTR GRAIN.QTR_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

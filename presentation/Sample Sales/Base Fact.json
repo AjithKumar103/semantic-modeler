@@ -7,6 +7,24 @@
     }, {
       "name" : "Units",
       "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Units"
+    }, {
+      "name" : "Actual Unit Price",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Actual Unit Price"
+    }, {
+      "name" : "Product Total Revenue",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Product Total Revenue"
+    }, {
+      "name" : "Product Type Revenue",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Product Type Revenue"
+    }, {
+      "name" : "Revenue Rank",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Revenue Rank"
+    }, {
+      "name" : "Revenue Share",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Revenue Share"
+    }, {
+      "name" : "Total Customers",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.F1 Revenue.Total Customers"
     } ]
   }
 }

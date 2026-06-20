@@ -1,9 +1,14 @@
 {
   "physicalTable" : {
-    "name" : "SAMP_REVENUE_F",
+    "name" : "SAMP_REVENUE_FA2",
     "sourceType" : "TABLE",
     "physicalColumns" : [ {
-      "name" : "UNITS",
+      "name" : "PROD_KEY",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "BILL_QTR_KEY",
       "dataType" : "NUMERIC",
       "length" : 0,
       "nullable" : true
@@ -13,22 +18,7 @@
       "length" : 0,
       "nullable" : true
     }, {
-      "name" : "CUST_KEY",
-      "dataType" : "NUMERIC",
-      "length" : 0,
-      "nullable" : true
-    }, {
-      "name" : "PROD_KEY",
-      "dataType" : "NUMERIC",
-      "length" : 0,
-      "nullable" : true
-    }, {
-      "name" : "BILL_DAY_DT",
-      "dataType" : "TIMESTAMP",
-      "length" : 0,
-      "nullable" : true
-    }, {
-      "name" : "EMPL_KEY",
+      "name" : "UNITS",
       "dataType" : "NUMERIC",
       "length" : 0,
       "nullable" : true

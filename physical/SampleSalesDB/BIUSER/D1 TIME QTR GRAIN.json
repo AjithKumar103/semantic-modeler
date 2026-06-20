@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "D1 TIME QTR GRAIN",
+    "sourceTable" : "physicalTable:SampleSalesDB.BIUSER.SAMP_TIME_QTR_D",
+    "overrideSourceCacheSetting" : false
+  }
+}

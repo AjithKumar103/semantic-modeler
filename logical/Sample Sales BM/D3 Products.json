@@ -2,6 +2,7 @@
   "logicalTable" : {
     "name" : "D3 Products",
     "type" : "DIMENSION",
+    "primaryKey" : [ "Prod Key" ],
     "logicalColumns" : [ {
       "name" : "Prod Key",
       "dataType" : "NUMERIC",
@@ -9,19 +10,14 @@
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
-          "logicalTableSource" : "D3 PRODUCTS",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.PROD_KEY" ]
-          }
-        }, {
           "logicalTableSource" : "LTS1 Products",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.PROD_KEY" ]
           }
         } ]
-      }
+      },
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Prod Dsc",
       "dataType" : "VARCHAR",
@@ -29,19 +25,14 @@
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
-          "logicalTableSource" : "D3 PRODUCTS",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.PROD_DSC" ]
-          }
-        }, {
           "logicalTableSource" : "LTS1 Products",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.PROD_DSC" ]
           }
         } ]
-      }
+      },
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Type",
       "dataType" : "VARCHAR",
@@ -49,19 +40,14 @@
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
-          "logicalTableSource" : "D3 PRODUCTS",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.TYPE" ]
-          }
-        }, {
           "logicalTableSource" : "LTS1 Products",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.TYPE" ]
           }
         } ]
-      }
+      },
+      "logicalLevel" : "Product Type"
     }, {
       "name" : "Lob",
       "dataType" : "VARCHAR",
@@ -69,19 +55,14 @@
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
-          "logicalTableSource" : "D3 PRODUCTS",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.LOB" ]
-          }
-        }, {
           "logicalTableSource" : "LTS1 Products",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.LOB" ]
           }
         } ]
-      }
+      },
+      "logicalLevel" : "Product LOB"
     }, {
       "name" : "Brand",
       "dataType" : "VARCHAR",
@@ -89,19 +70,14 @@
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
-          "logicalTableSource" : "D3 PRODUCTS",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.BRAND" ]
-          }
-        }, {
           "logicalTableSource" : "LTS1 Products",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.BRAND" ]
           }
         } ]
-      }
+      },
+      "logicalLevel" : "Product Brand"
     }, {
       "name" : "Sequence",
       "dataType" : "NUMERIC",
@@ -109,19 +85,14 @@
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
-          "logicalTableSource" : "D3 PRODUCTS",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.SEQUENCE" ]
-          }
-        }, {
           "logicalTableSource" : "LTS1 Products",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.SEQUENCE" ]
           }
         } ]
-      }
+      },
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Brand Key",
       "dataType" : "NUMERIC",
@@ -129,19 +100,14 @@
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
-          "logicalTableSource" : "D3 PRODUCTS",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.BRAND_KEY" ]
-          }
-        }, {
           "logicalTableSource" : "LTS1 Products",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.BRAND_KEY" ]
           }
         } ]
-      }
+      },
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Lob Key",
       "dataType" : "NUMERIC",
@@ -149,19 +115,14 @@
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
-          "logicalTableSource" : "D3 PRODUCTS",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.LOB_KEY" ]
-          }
-        }, {
           "logicalTableSource" : "LTS1 Products",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.LOB_KEY" ]
           }
         } ]
-      }
+      },
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Type Key",
       "dataType" : "NUMERIC",
@@ -169,19 +130,14 @@
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
-          "logicalTableSource" : "D3 PRODUCTS",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.TYPE_KEY" ]
-          }
-        }, {
           "logicalTableSource" : "LTS1 Products",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.TYPE_KEY" ]
           }
         } ]
-      }
+      },
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Attribute 2",
       "dataType" : "VARCHAR",
@@ -195,7 +151,8 @@
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.ATTRIBUTE_2" ]
           }
         } ]
-      }
+      },
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Attribute 1",
       "dataType" : "VARCHAR",
@@ -209,7 +166,8 @@
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.ATTRIBUTE_1" ]
           }
         } ]
-      }
+      },
+      "logicalLevel" : "Detail"
     }, {
       "name" : "Total Value",
       "dataType" : "VARCHAR",
@@ -223,7 +181,8 @@
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D3 PRODUCTS.TOTAL_VALUE" ]
           }
         } ]
-      }
+      },
+      "logicalLevel" : "Detail"
     } ],
     "logicalTableSources" : [ {
       "name" : "LTS1 Products",
@@ -231,10 +190,54 @@
       "tableMapping" : {
         "tables" : [ "physicalTable:SampleSalesDB.BIUSER.D3 PRODUCTS" ]
       },
+      "dataGranularity" : [ "logicalLevel:Sample Sales BM.D3 Products.Detail" ],
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
       "distinctValues" : false
     } ],
-    "primaryKey" : [ "Prod Key" ]
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Prod Key" ],
+        "displayKey" : "Prod Key"
+      }, {
+        "name" : "Product Brand",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Brand" ],
+        "displayKey" : "Brand"
+      }, {
+        "name" : "Product LOB",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Lob" ],
+        "displayKey" : "Lob"
+      }, {
+        "name" : "Product Type",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Type" ],
+        "displayKey" : "Type"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "H1",
+        "levels" : [ "Total", "Product Brand", "Product LOB", "Product Type", "Detail" ]
+      } ]
+    }
   }
 }

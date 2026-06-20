@@ -19,6 +19,46 @@
     }, {
       "name" : "Calendar Date",
       "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D4 Time.Calendar Date"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:Sample Sales BM.D4 Time",
+      "localization" : { },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D4 Time.Total",
+        "localization" : { }
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D4 Time.Year",
+        "displayColumn" : "presentationColumn:Sample Sales.Time.Per Name Year",
+        "localization" : { }
+      }, {
+        "name" : "Half Year",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D4 Time.Half Year",
+        "displayColumn" : "presentationColumn:Sample Sales.Time.Per Name Half",
+        "localization" : { }
+      }, {
+        "name" : "Qtr",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D4 Time.Qtr",
+        "displayColumn" : "presentationColumn:Sample Sales.Time.Per Name Qtr",
+        "localization" : { }
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D4 Time.Month",
+        "displayColumn" : "presentationColumn:Sample Sales.Time.Per Name Month",
+        "localization" : { }
+      }, {
+        "name" : "Week",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D4 Time.Week",
+        "displayColumn" : "presentationColumn:Sample Sales.Time.Per Name Week",
+        "localization" : { }
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D4 Time.Detail",
+        "displayColumn" : "presentationColumn:Sample Sales.Time.Calendar Date",
+        "localization" : { }
+      } ]
     } ]
   }
 }

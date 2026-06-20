@@ -9,16 +9,16 @@
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
-          "logicalTableSource" : "F1 REVENUE",
+          "logicalTableSource" : "LTS1 Revenue",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.F1 REVENUE.UNITS" ]
           }
         }, {
-          "logicalTableSource" : "LTS1 Revenue",
+          "logicalTableSource" : "F2 REVENUE AGGREGATE",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.F1 REVENUE.UNITS" ]
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.F2 REVENUE AGGREGATE.UNITS" ]
           }
         } ]
       },
@@ -32,12 +32,51 @@
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",
         "physicalMappings" : [ {
-          "logicalTableSource" : "F1 REVENUE",
+          "logicalTableSource" : "LTS1 Revenue",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
             "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.F1 REVENUE.REVENUE" ]
           }
         }, {
+          "logicalTableSource" : "F2 REVENUE AGGREGATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.F2 REVENUE AGGREGATE.REVENUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM"
+      }
+    }, {
+      "name" : "Actual Unit Price",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1 / %2",
+          "expressionObjects" : [ "logicalColumn:Sample Sales BM.F1 Revenue.Revenue", "logicalColumn:Sample Sales BM.F1 Revenue.Units" ]
+        }
+      }
+    }, {
+      "name" : "Revenue Rank",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "RANK(%1 )",
+          "expressionObjects" : [ "logicalColumn:Sample Sales BM.F1 Revenue.Revenue" ]
+        }
+      }
+    }, {
+      "name" : "Product Total Revenue",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
           "logicalTableSource" : "LTS1 Revenue",
           "physicalExpression" : {
             "expressionTemplate" : "%1",
@@ -46,7 +85,82 @@
         } ]
       },
       "aggregation" : {
-        "rule" : "SUM"
+        "rule" : "SUM",
+        "aggregateByLevels" : [ "logicalLevel:Sample Sales BM.D3 Products.Total" ]
+      }
+    }, {
+      "name" : "Product Type Revenue",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LTS1 Revenue",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.F1 REVENUE.REVENUE" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "aggregateByLevels" : [ "logicalLevel:Sample Sales BM.D3 Products.Product Type" ]
+      }
+    }, {
+      "name" : "Revenue Share",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1/%2",
+          "expressionObjects" : [ "logicalColumn:Sample Sales BM.F1 Revenue.Revenue", "logicalColumn:Sample Sales BM.F1 Revenue.Product Total Revenue" ]
+        }
+      }
+    }, {
+      "name" : "Prod Key",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F2 REVENUE AGGREGATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.F2 REVENUE AGGREGATE.PROD_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Bill Qtr Key",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F2 REVENUE AGGREGATE",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.F2 REVENUE AGGREGATE.BILL_QTR_KEY" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Total Customers",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "LTS1 Revenue",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.F1 REVENUE.CUST_KEY" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT_DISTINCT"
       }
     } ],
     "logicalTableSources" : [ {
@@ -55,6 +169,17 @@
       "tableMapping" : {
         "tables" : [ "physicalTable:SampleSalesDB.BIUSER.F1 REVENUE" ]
       },
+      "dataGranularity" : [ "logicalLevel:Sample Sales BM.D3 Products.Detail", "logicalLevel:Sample Sales BM.D2 Customers.Detail", "logicalLevel:Sample Sales BM.D4 Time.Detail", "logicalLevel:Sample Sales BM.D30 Products.Detail", "logicalLevel:Sample Sales BM.D5 Sales Rep.Sales Rep Detail" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "F2 REVENUE AGGREGATE",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:SampleSalesDB.BIUSER.F2 REVENUE AGGREGATE" ]
+      },
+      "dataGranularity" : [ "logicalLevel:Sample Sales BM.D4 Time.Qtr", "logicalLevel:Sample Sales BM.D2 Customers.Total", "logicalLevel:Sample Sales BM.D30 Products.Total" ],
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
       "distinctValues" : false
@@ -71,6 +196,16 @@
       "drivingTable" : "None"
     }, {
       "rightTable" : "logicalTable:Sample Sales BM.D4 Time",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    }, {
+      "rightTable" : "logicalTable:Sample Sales BM.D30 Products",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "drivingTable" : "None"
+    }, {
+      "rightTable" : "logicalTable:Sample Sales BM.D5 Sales Rep",
       "joinType" : "INNER",
       "cardinality" : "MANY_TO_ONE",
       "drivingTable" : "None"

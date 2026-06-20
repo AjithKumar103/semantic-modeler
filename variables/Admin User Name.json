@@ -1,0 +1,10 @@
+{
+  "initBlock" : {
+    "name" : "Admin User Name",
+    "type" : "STATIC",
+    "variables" : [ {
+      "name" : "AdminUsernameVariable",
+      "value" : "'Ajith'"
+    } ]
+  }
+}

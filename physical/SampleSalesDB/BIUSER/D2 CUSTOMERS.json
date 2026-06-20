@@ -12,6 +12,15 @@
       },
       "joinType" : "INNER",
       "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:SampleSalesDB.BIUSER.D10 ADDRESSES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleSalesDB.BIUSER.D2 CUSTOMERS.ADDRESS_KEY",
+        "rightColumn" : "physicalColumn:SampleSalesDB.BIUSER.D10 ADDRESSES.ADDRESS_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
     } ]
   }
 }

@@ -1,0 +1,190 @@
+{
+  "logicalTable" : {
+    "name" : "D5 Sales Rep",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Sales Rep Number" ],
+    "logicalColumns" : [ {
+      "name" : "Sales Rep Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D50 SALES REP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D50 SALES REP.EMPL_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Sales Rep Detail"
+    }, {
+      "name" : "Sales Rep Number",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D50 SALES REP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D50 SALES REP.EMPLOYEE_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Sales Rep Detail"
+    }, {
+      "name" : "Hire Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D50 SALES REP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D50 SALES REP.HIRE_DT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Sales Rep Detail"
+    }, {
+      "name" : "Manager Number",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D50 SALES REP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D50 SALES REP.MGR_ID" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Sales Rep Detail"
+    }, {
+      "name" : "Postition Key",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D50 SALES REP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D50 SALES REP.POSTN_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Sales Rep Detail"
+    }, {
+      "name" : "Sales Rep Type",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D50 SALES REP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D50 SALES REP.TYPE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Sales Rep Detail"
+    }, {
+      "name" : "Postition",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D50 SALES REP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D52 SALES REP POSITION.POSTN_DESC" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Sales Rep Detail"
+    }, {
+      "name" : "Postition Level",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D50 SALES REP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D52 SALES REP POSITION.POSTN_LEVEL" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Sales Rep Detail"
+    }, {
+      "name" : "Closure Distance",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D50 SALES REP",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:SampleSalesDB.BIUSER.D51 SALES REP PARENT CHILD.DISTANCE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Sales Rep Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "D50 SALES REP",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:SampleSalesDB.BIUSER.D50 SALES REP", "physicalTable:SampleSalesDB.BIUSER.D52 SALES REP POSITION", "physicalTable:SampleSalesDB.BIUSER.D51 SALES REP PARENT CHILD" ],
+        "logicalTableSourceJoins" : [ {
+          "leftTable" : "physicalTable:SampleSalesDB.BIUSER.D50 SALES REP",
+          "rightTable" : "physicalTable:SampleSalesDB.BIUSER.D52 SALES REP POSITION",
+          "joinType" : "INNER",
+          "disable" : false
+        }, {
+          "leftTable" : "physicalTable:SampleSalesDB.BIUSER.D51 SALES REP PARENT CHILD",
+          "rightTable" : "physicalTable:SampleSalesDB.BIUSER.D50 SALES REP",
+          "joinType" : "INNER",
+          "disable" : false
+        } ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "PARENT_CHILD",
+    "parentChildHierarchy" : {
+      "name" : "Parent-Child",
+      "logicalLevels" : [ {
+        "name" : "Sales Rep Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Sales Rep Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Sales Rep Number" ],
+        "displayKey" : "Sales Rep Name",
+        "parentKey" : "Manager Number"
+      } ],
+      "relationshipTables" : [ {
+        "logicalTableSource" : "D50 SALES REP",
+        "table" : "physicalTable:SampleSalesDB.BIUSER.D51 SALES REP PARENT CHILD",
+        "memberKey" : "MEMBER_KEY",
+        "parentKey" : "ANCESTOR_KEY",
+        "distance" : "DISTANCE",
+        "leafNodeIdentifier" : "IS_LEAF"
+      } ]
+    }
+  }
+}

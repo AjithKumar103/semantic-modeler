@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "D50 SALES REP",
+    "sourceTable" : "physicalTable:SampleSalesDB.BIUSER.SAMP_EMPL_D_VH",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:SampleSalesDB.BIUSER.D52 SALES REP POSITION",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleSalesDB.BIUSER.D50 SALES REP.POSTN_KEY",
+        "rightColumn" : "physicalColumn:SampleSalesDB.BIUSER.D52 SALES REP POSITION.POSTN_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

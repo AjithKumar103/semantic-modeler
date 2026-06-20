@@ -30,6 +30,24 @@
       } ],
       "joinType" : "INNER",
       "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:SampleSalesDB.BIUSER.D30 PRODUCTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleSalesDB.BIUSER.F1 REVENUE.PROD_KEY",
+        "rightColumn" : "physicalColumn:SampleSalesDB.BIUSER.D30 PRODUCTS.PROD_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:SampleSalesDB.BIUSER.D51 SALES REP PARENT CHILD",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:SampleSalesDB.BIUSER.F1 REVENUE.EMPL_KEY",
+        "rightColumn" : "physicalColumn:SampleSalesDB.BIUSER.D51 SALES REP PARENT CHILD.MEMBER_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
     } ]
   }
 }

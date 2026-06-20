@@ -1,0 +1,37 @@
+{
+  "presentationTable" : {
+    "name" : "Addresses",
+    "presentationColumns" : [ {
+      "name" : "Postal Code",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D10 Addresses.Postal Code"
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D10 Addresses.City"
+    }, {
+      "name" : "State Province",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D10 Addresses.State Province"
+    }, {
+      "name" : "Region",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D10 Addresses.Region"
+    }, {
+      "name" : "Iso Country Code3",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D10 Addresses.Iso Country Code3"
+    }, {
+      "name" : "Country Name",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D10 Addresses.Country Name"
+    }, {
+      "name" : "State Province Abbrv",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D10 Addresses.State Province Abbrv"
+    }, {
+      "name" : "Address Key",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D10 Addresses.Address Key",
+      "permissions" : [ {
+        "accessor" : "role:BI Content Author",
+        "access" : "NO_ACCESS"
+      } ]
+    }, {
+      "name" : "Area",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D10 Addresses.Area"
+    } ]
+  }
+}
